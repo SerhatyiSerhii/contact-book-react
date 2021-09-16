@@ -1,0 +1,55 @@
+.top-line {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.add-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #76b852;
+    box-sizing: border-box;
+    margin: 10px 0 0 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+
+    &:hover {
+        cursor: pointer;
+
+        .plus {
+            background-color: #76b852;
+
+            &::before {
+                background-color: #76b852;
+            }
+        }
+    }
+
+    .plus {
+        transition: 0.5s;
+        position: relative;
+        border-radius: 5px;
+        width: 80%;
+        height: 2px;
+        background-color: lightgray;
+
+        &::before {
+            transition: 0.5s;
+            border-radius: 5px;
+            display: block;
+            background-color: lightgray;
+            transform: rotateZ(90deg);
+            content: '';
+            width: 100%;
+            height: 2px;
+        }
+    }
+}

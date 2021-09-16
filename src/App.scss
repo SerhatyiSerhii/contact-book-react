@@ -1,0 +1,21 @@
+section {
+    height: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+aside {
+    background-color: white;
+    width: 35%;
+    border-right: 1px solid black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
